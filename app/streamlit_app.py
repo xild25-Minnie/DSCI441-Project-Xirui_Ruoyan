@@ -66,7 +66,7 @@ def load_data_and_models():
     import pickle
     
     # Load data
-    data_path = os.path.join(os.path.dirname(__file__), '/workspaces/LiXirui_GongRuoyan/data/Supplement_Sales_Weekly_Expanded.csv')
+    data_path = os.path.join(os.path.dirname(__file__), '../data/Supplement_Sales_Weekly_Expanded.csv')
     df = pd.read_csv(data_path)
     df['Date'] = pd.to_datetime(df['Date'])
     df = df.sort_values(by=['Product Name', 'Date'])
