@@ -23,7 +23,7 @@ echo "Access URL: http://localhost:8501"
 echo ""
 echo "Opening browser..."
 
-nohup streamlit run app/streamlit_app.py --server.port 8501 --server.address 0.0.0.0 --server.headless true > streamlit.log 2>&1 &
+nohup python -m streamlit run app/streamlit_app.py --server.port 8501 > streamlit.log 2>&1 &
 STREAMLIT_PID=$!
 
 sleep 3
